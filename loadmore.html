@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechKnowTouchwood</title>
+
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"
+        integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    /* header  */
+    .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: mediumvioletred;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+
+    /* banner image */
+    .banner {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .mas:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- Main Site -->
+    <main id="site-main">
+
+        <!-- Blog Post Section -->
+        <section id="posts">
+            <div class="container">
+                <div class="grid">
+                    <!-- article -->
+                    <div class="grid-item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow-img">
+                                    <a href="water">
+                                        <img src="public/images/home/wtr.jpg" class="img-fluid" alt="not available">
+                                    </a>
+                                </div>
+                                <div class="card-body text-center px-1">
+                                    <a href="water" class="text-title display-1 text-dark" style="color: blue;">
+                                        The right way to drink water, advantages and disadvantages(पानी पीने
+                                        का सही तरीका ,फायदा और
+                                        नुकसान...!)
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- .article -->
+
+                    <div class="grid-item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow-img">
+                                    <a href="channelfind">
+                                        <img src="public/images/home/yt.jpg" class="img-fluid" alt="not available">
+                                    </a>
+                                </div>
+                                <div class="card-body text-center px-1">
+                                    <a href="channelfind" class="text-title display-1 text-dark" style="color: blue;">
+                                        How to find User ID & Channel ID on
+                                        Youtube(Youtube पर User ID और
+                                        Channel ID कैसे find
+                                        करे...)
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+
+                    <!-- article -->
+                    <div class="grid-item">
+                        <article class="article">
+                            <div class="card">
+                                <div class="overflow-img">
+                                    <a href="chana">
+                                        <img src="public/images/home/cna.jpg" class="img-fluid" alt="not available">
+                                    </a>
+                                </div>
+                                <div class="card-body text-center px-1">
+                                    <a href="chana" class="text-title display-1 text-dark" style="color: blue;">
+                                        अंकुरित चना खाने के जबरदस्त फायदे...!)
+                                    </a>
+
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- .article -->
+                 </div>
+              <div class="text-center">
+                    <button class="btn btn-primary secondary-title text-light">Load More Posts...</button>
+                </div>
+				</div>
+
+        </section>
+    </main>
+    <!-- close.Blog Post Section -->
+
+
+    <!-- masonry libray for horizontal grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- swiper slider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
+        integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
+        crossorigin="anonymous"></script>
+
+    <!-- custom javascript main.js file -->
+    <script src="public/javascripts/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#load").load();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

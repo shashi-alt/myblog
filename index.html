@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechKnowTouchwood</title>
+
+  <link rel="stylesheet" href="public/stylesheets/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- font awesome icons cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+
+  <!-- swiper slider css file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"
+    integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  /* header  */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: mediumvioletred;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 75%;
+  }
+
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  /* banner image */
+  .banner {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .mas:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  button {
+    cursor: pointer;
+  }
+</style>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="shadow bg-light">
+    <nav class="container navbar">
+      <a href="#" class="nav-brand text-dark">
+        <span style="color: red;">Tech</span>Know<span style="color: blue;">Touch</span>wood
+      </a>
+
+      <!-- toggle button -->
+      <button class="toggle-button">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+
+      <!-- collapse on toggle button click -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          <a href="#" class="nav-link">Home</a>
+          <a href="myblogs.html" class="nav-link">My-Blogs</a>
+          <a href="https://alltexttranslator.herokuapp.com/" class="nav-link">Text-Translator</a>
+          <a href="https://www.youtube.com/channel/UCXnKdPJtgsNsc022EMXgMgQ" class="nav-link">Youtube-Channel</a>
+          <a href="Privacy-Policy.html" class="nav-link">Privacy-Policy</a>
+          <a href="contact.html" class="nav-link">Contact-Us</a>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="header">
+      <marquee width="60%" direction="left" scrollamount="10" height="50px" style="color: darkblue;">
+        www.Techknowtouchwood.com
+      </marquee>
+    </div>
+
+  </header>
+  <!-- .Header -->
+
+<div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: '' }, 'google_translate_element');
+    }
+  </script>
+
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <section class="blogpart" id="blog">
+    <div class="mas">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2 style="color:red;">Welcome to Tech<span style="color: crimson;">Know</span><span
+              style="color: blue;">Touch</span>wood...🙏🏻</h2><br>
+          <h1 style="color: blue; text-align: center;">ℕ𝕖𝕧𝕖𝕣 <span style="color: crimson;">𝕊𝕥𝕠𝕡</span> <span
+              style="color: hotpink;">𝕐𝕠𝕦𝕣</span> <span style="color: deepskyblue;">𝕃𝕖𝕒𝕣𝕟𝕚𝕟𝕘</span>
+          </h1>
+          <h3 style="text-align: center; color:darkorchid;">𝔸𝕥 𝕋𝕖𝕔𝕙𝕂𝕟𝕠𝕨𝕥𝕠𝕦𝕔𝕙𝕨𝕠𝕠𝕕, ℙ𝕣𝕠𝕧𝕚𝕕𝕖
+            𝕪𝕠𝕦 𝕒𝕝𝕝 𝕥𝕪𝕡𝕖𝕤 𝕠𝕗 𝕚𝕟𝕗𝕠𝕣𝕞𝕒𝕥𝕚𝕠𝕟 𝕚𝕟 𝕤𝕚𝕞𝕡𝕝𝕖 ℍ𝕚𝕟𝕕𝕚 𝕝𝕒𝕟𝕘𝕦𝕒𝕘𝕖 𝕨𝕖
+            𝕞𝕒𝕜𝕖 𝕖𝕧𝕖𝕣𝕪 𝕖𝕗𝕗𝕠𝕣𝕥 𝕥𝕙𝕒𝕥 𝕨𝕖 𝕒𝕣𝕖 𝕣𝕖𝕝𝕒𝕥𝕖𝕕 𝕥𝕠 ℂ𝕠𝕞𝕡𝕦𝕥𝕖𝕣
+            𝕋𝕖𝕔𝕙𝕟𝕠𝕝𝕠𝕘𝕪, ℙ𝕣𝕠𝕘𝕣𝕒𝕞𝕞𝕚𝕟𝕘, 𝔾𝕠𝕧𝕖𝕣𝕟𝕞𝕖𝕟𝕥 𝕊𝕔𝕙𝕖𝕞𝕖, 𝔹𝕚𝕠𝕘𝕣𝕒𝕡𝕙𝕪,
+            ℍ𝕖𝕒𝕝𝕥𝕙/𝔽𝕚𝕥𝕟𝕖𝕤𝕤,
+            𝕊𝕠 𝕚𝕗 𝕪𝕠𝕦 𝕒𝕣𝕖 𝕖𝕩𝕔𝕚𝕥𝕖𝕕 𝕥𝕠 𝕝𝕖𝕒𝕣𝕟 𝕤𝕠𝕞𝕖𝕥𝕙𝕚𝕟𝕘 𝕟𝕖𝕨 𝕥𝕙𝕖𝕟 𝕛𝕠𝕚𝕟 𝕠𝕦𝕣
+            𝕗𝕒𝕞𝕚𝕝𝕪 𝕒𝕟𝕕 𝕚𝕟𝕔𝕣𝕖𝕒𝕤𝕖 𝕪𝕠𝕦𝕣 𝕜𝕟𝕠𝕨𝕝𝕖𝕕𝕘𝕖 𝕡𝕠𝕨𝕖𝕣 𝕒𝕟𝕕 𝕓𝕖𝕔𝕠𝕞𝕖 𝕒 𝕓𝕚𝕘
+            𝕘𝕦𝕚𝕕𝕖 𝕚𝕟 𝕪𝕠𝕦𝕣𝕤𝕖𝕝𝕗.</h3>
+
+          <img src="public/images/bnr.png" alt="not available" class="banner" width="800" height="500"><br>
+
+
+        </div>
+      </div>
+      <!-- toppics post links Start here   -->
+      <div class="rightcolumn">
+        <div class="card">
+          <h3 style="color: crimson;"><u>Toppics चुने और उससे जुड़े पोस्ट को पढ़े!</u></h3>
+
+
+          <div style="background: aquamarine;"><a href="computertechnology.html">📕 Computer-Techonogy & programming</a>
+          </div><br>
+
+
+          <div style="background: aquamarine;"><a href="health.html"> 📕 Health-Fitness/Exercises</a></div><br>
+
+
+          <div style="background: aquamarine;"><a href="biography.html"> 📕
+              Bio-Graphy Net Worth</a></div><br>
+
+          <div style="background: aquamarine;"><a href="sarkariyojna.html"> 📕
+              Sarkari Yojna</a></div><br>
+        </div>
+        <!-- toppics link end here  -->
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Main Site -->
+  <main id="site-main">
+
+    <!-- Blog Post Section -->
+    <section id="posts">
+      <div class="container">
+        <div class="grid">
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="virat.html">
+                    <img src="public/images/home/vk.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="virat.html" class="text-title display-1 text-dark" style="color: blue;">
+                    Bio-graphy of virat Kohli("विराट कोहली की जीवनी"...!)
+                  </a>
+
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="mongodb.html">
+                    <img src="public/images/home/mdb.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="mongodb.html" class="text-title display-1 text-dark" style="color: blue;">
+                    MongoDB Installation on Window10 in hindi (MongoDB इंस्टालेशन...)
+                  </a>
+
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="fbplugins.html">
+                    <img src="public/images/home/fb.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="fbplugins.html" class="text-title display-1 text-dark" style="color: blue;">
+                    Facebook Social Plugins का उपयोग करके अपनी वेबसाइट या ब्लॉग पर Like
+                    और Share
+                    बटन कैसे जोड़ें...?
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="tubebuddy.html">
+                    <img src="public/images/home/TB.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="tubebuddy.html" class="text-title display-1 text-dark" style="color: blue;">
+                    Grow your youtube channel by the help of TUBEBUDDY(अपने यूट्यूब चैनल पर TUBEBUDDY कैसे use करे हिंदी
+                    में ..)
+                  </a>
+
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="aadhar.html">
+                    <img src="public/images/home/pvc.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="aadhar.html" class="text-title display-1 text-dark" style="color: blue;">
+                    How to Order Your Aadhar PVC Card(अपना Aadhar PVC Card कैसे आर्डर करे...)
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="youtube.html">
+                    <img src="public/images/home/youtube.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="youtube.html" class="text-title display-1 text-dark" style="color: blue;">
+                    (Configure a Youtube Button)अपनी वेबसाइट या ब्लॉग पर Youtube Subscribe Button कैसे जोड़ें? हिंदी में
+                  </a>
+
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="selffit.html">
+                    <img src="public/images/home/fit.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="selffit.html" class="text-title display-1 text-dark" style="color: blue;">
+                    How to Keep fit Yourself(अपने आपको फिट कैसे रखे!...)
+                  </a>
+
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="guava.html">
+                    <img src="public/images/home/guava.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="guava.html" class="text-title display-1 text-dark" style="color: blue;">
+                    Amazing Benefits of eating Guava(अमरूद खाने के अदभुत फायदे!...)
+                  </a>
+
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+          <!-- article -->
+          <div class="grid-item">
+            <article class="article">
+              <div class="card">
+                <div class="overflow-img">
+                  <a href="Aloevera.html">
+                    <img src="public/images/home/aloe.jpg" class="img-fluid" alt="not available">
+                  </a>
+                </div>
+                <div class="card-body text-center px-1">
+                  <a href="Aloevera.html" class="text-title display-1 text-dark" style="color: blue;">
+                    Amazing Benefits of AloeVera(एलोवेरा के कमाल के फायदे!...)
+                  </a>
+
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- .article -->
+        </div>
+
+        <div class="text-center" id="load">
+          <button class="btn btn-primary secondary-title text-light">Load More Posts...</button>
+        </div>
+      </div>
+    </section>
+    <!-- close.Blog Post Section -->
+
+
+
+
+    <!-- start Swiper slider -->
+    <section class="slider">
+      <div class="container">
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="channelfind.html">
+                <img src="public/images/home/yt.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="mongodb.html">
+                <img src="public/images/home/mdb.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="tubebuddy.html">
+                <img src="public/images/home/TB.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="aadhar.html">
+                <img src="public/images/home/pvc.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="youtube.html">
+                <img src="public/images/home/youtube.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="guava.html">
+                <img src="public/images/home/guava.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="fbplugins.html">
+                <img src="public/images/home/fb.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="selffit.html">
+                <img src="public/images/home/fit.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="Aloevera.html">
+                <img src="public/images/home/aloe.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+
+
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="virat.html">
+                <img src="public/images/home/vk.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="water.html">
+                <img src="public/images/home/wtr.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="chana.html">
+                <img src="public/images/home/cna.jpg" class="img-fluid" alt="not available">
+              </a>
+            </div>
+            <!-- Slides -->
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--close .Swiper slider -->
+
+  </main>
+  <!-- close.Main Site -->
+
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-3">
+          <h2 class="footer-title secondary-title">About-Us</h2>
+
+          <div class="secondary-title text-secondary">
+            <p class="mt-2 ">
+
+              Hey, I am Shashi a professional engineer , Youtuber and Blogger. I just Share
+              some of most Interesting Posts related to Computer Technology and programming
+              , Sarkari Yojna , Health/Fitness and Biography.Make sure You Hit the Like Button , Share Button and
+              Subscribe Button to Get My Latest Post.<br>
+              Thank you.
+
+            </p>
+
+            <address>
+              <i class="fas fa-map-marker-alt text-primary"></i>
+              New Ashok Nagar Block-A New Delhi 110096 India
+            </address>
+
+            <div class="phone">
+              <i class="fas fa-mobile text-primary"></i>
+              7765955247 , 8168583827
+            </div>
+
+            <div class="email">
+              <i class="fas fa-envelope text-primary"></i>
+              TechKnowTouchwood@gmail.com
+            </div>
+
+          </div>
+        </div>
+        <div class="col-3">
+          <h2 class="footer-title secondary-title">Feature Post</h2>
+
+          <div class="feature-post">
+            <div class="flex-item">
+              <article class="article">
+                <div class="d-flex">
+                  <a href="virat.html">
+                    <img src="public/images/virat/VK1.png" class="object-fit px-1" alt="not available">
+                    <div class="px-1">
+                      <a href="virat.html" class="text-title display-2 text-dark">
+                        Bio-graphy of virat Kohli("विराट कोहली की जीवनी"...!)
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <div class="flex-item">
+              <article class="article">
+                <div class="d-flex">
+                  <a href="mongodb.html">
+                    <img src="public/images/m.png" class="object-fit px-1" alt="not available">
+                    <div class="px-1">
+                      <a href="mongodb.html" class="text-title display-2 text-dark">
+                        MongoDB Installation on Window10 in hindi (MongoDB इंस्टालेशन हिंदी में)
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="flex-item">
+              <article class="article">
+                <div class="d-flex">
+                  <a href="fbplugins.html">
+                    <img src="public/images/f.png" class="object-fit px-1" alt="not available">
+                    <div class="px-1">
+                      <a href="fbplugins.html" class="text-title display-2 text-dark">
+                        Facebook Social Plugins का उपयोग करके अपनी वेबसाइट या ब्लॉग पर Like और Share बटन कैसे जोड़ें?
+                        हिंदी में
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </article>
+            </div>
+            <div class="flex-item">
+              <article class="article">
+                <div class="d-flex">
+                  <a href="youtube.html">
+                    <img src="public/images/y.png" class="object-fit px-1" alt="not available">
+                    <div class="px-1">
+                      <a href="youtube.html" class="text-title display-2 text-dark">
+                        (Configure a Youtube Button)अपनी वेबसाइट या ब्लॉग पर Youtube Subscribe Button कैसे जोड़ें? हिंदी
+                        में
+                      </a>
+                    </div>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <h2 class="footer-title secondary-title">Tags</h2>
+
+          <div class="tags">
+            <div class="d-flex flex-wrap">
+              <a href="computertechnology.html" class="nav-link btn bg-light">Computer-Techonogy & programming</a>
+              <a href="health.html" class="nav-link btn bg-light">Health-Fitness/Exercises</a>
+              <a href="biography.html" class="nav-link btn bg-light">Bio-Graphy Net Worth</a>
+              <a href="sarkariyojna.html" class="nav-link btn bg-light">Sarkari-Yojna</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <!-- copyrights  -->
+
+    </div>
+    <div class="copyrights">
+      <p class="text-center text-secondary display-2">
+        Copyright ©2021-22 <a href="#" class="text-primary">TechKnowTouchwood</a> || All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- .footer -->
+
+
+  <!-- masonry libray for horizontal grid -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+    integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+    crossorigin="anonymous"></script>
+
+  <!-- swiper slider cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
+    integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
+    crossorigin="anonymous"></script>
+
+  <!-- custom javascript main.js file -->
+  <script src="public/javascripts/script.js"></script>
+  <script async src="https://cse.google.com/cse.js?cx=ebc32f71df6253483"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("#load").load("loadmore.html");
+      });
+    });
+  </script>
+
+</body>
+
+</html>

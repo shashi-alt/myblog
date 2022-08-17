@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechKnowTouchwood</title>
+
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"
+        integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    /* header  */
+    .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: mediumvioletred;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+
+    .GUAVA {
+        max-width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .mas:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+
+    .fa {
+        padding: 5px;
+        text-align: center;
+        margin: 4px 2px;
+        font-size: 30px;
+        width: 45px;
+        border-radius: 100px;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: red;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .fa-youtube {
+        background: red;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <!-- like and share plugin  -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v11.0"
+        nonce="Ci5SaryI"></script>
+
+    <!-- end like and share plugin  -->
+
+    <!-- Header -->
+    <header id="header" class="shadow bg-light">
+        <nav class="container navbar">
+            <a href="#" class="nav-brand text-dark">
+                <span style="color: red;">Tech</span>Know<span style="color: blue;">Touch</span>wood
+            </a>
+
+            <!-- toggle button -->
+            <button class="toggle-button">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- collapse on toggle button click -->
+            <div class="collapse">
+                <ul class="navbar-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="myblogs.html" class="nav-link">My-Blogs</a>
+                    <a href="https://alltexttranslator.herokuapp.com/" class="nav-link">Text-Translator</a>
+                    <a href="https://www.youtube.com/channel/UCXnKdPJtgsNsc022EMXgMgQ"
+                        class="nav-link">Youtube-Channel</a>
+                    <a href="Privacy-Policy.html" class="nav-link">Privacy-Policy</a>
+                    <a href="contact.html" class="nav-link">Contact-Us</a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header">
+            <marquee width="60%" direction="left" scrollamount="10" height="50px" style="color: darkblue;">
+                www.Techknowtouchwood.com
+            </marquee>
+        </div>
+
+    </header>
+    <!-- googlr translate part  -->
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: '' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- end google translate part  -->
+    <!-- main -->
+
+    <section class="blogpart" id="blog">
+        <div class="mas">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2 style="color: crimson;"><u>Amazing Benefits of eating Guava!(अमरूद खाने के अदभुत फायदे!...)</u>
+                    </h2>
+                    <h3>नमस्कार कैसे है आप लोग उम्मीद करते हैं आप अच्छे होंगे,आज के ब्लॉग में हम जानेंगे की <mark
+                            style="color: red;">अमरुद खाने
+                            के अद्भुत फायदे</mark> के बारे में
+                        चलिये शुरू करते हैं!
+                        Oct
+                        13, 2021.</h3><br>
+
+
+                    <img src="public/images/guava/GV1.jpg" alt="not available" class="GUAVA" width="800" height="500"><br>
+
+                    <b>
+                        <p style="color: blue;">अमरुद का नाम सुनते मन ललचाने लगता है कि कैसे जल्दी खा लू अमरुद , हा जी
+                            हम
+                            बात कर रहे अमरुद की वही अमरुद जिसके अद्भुत फायदे है ,वैसे तो अमरुद ठंढी महीने में आती है
+                            आज हम जानेंगे <mark style="color: red;">अमरुद खाने के फायदे के बारे में!</mark> इसलिए post
+                            को last तक Follow करे...!</p>
+                    </b><br>
+
+
+                    <p>
+                    <h3>#1 फायदे ही फायदे! धयान से पढ़े!</h3>
+                    <img src="public/images/guava/GV2.jpg" alt="not available" class="GUAVA" width="800" height="500"><br>
+                    <p> अमरुद हरे रंग में पीले रंग में और उजले रंग में मिलता है लेकिन हरे रंग का अमरूद खाने में बहुत
+                        मीठा
+                        लगता है!
+                        हमारे देश में अमरुद हर जगह आसानी से मिल जाते है बहुत से लोग अपने घरों में ही इसका पेड़ लगा लेते
+                        है!
+                        अमरुद तो हमारे देश में हर जगह मिल जाती है आसानी से लेकिन बहुत कम को ये पता होता है की ये
+                        स्वास्थय के
+                        लिए कितना फायदेमंद होता है!</p>
+
+                    <P> # <mark style="color: red;">100 ग्राम अमरुद</mark> में लगभग <mark style="color: red;">51
+                            कैलोरीज</mark> पाये जाते है जो हमारे स्वास्थय के लिए अच्छा है क्युकी कम
+                        कैलोरीज
+                        होने के कारण वेट लॉस में हमारी मदद करता है!</P>
+
+                    <P># <mark style="color: red;">100 ग्राम अमरुद</mark> में लगभग <mark style="color: red;">5.2
+                            फाइबर</mark> होता है जो हमारे स्वास्थय के लिए अच्छा है क्युकी ये हमें
+                        कोलस्ट्रॉल को कम करने में हमारी मदद करता है!</P>
+
+                    <P> # पीली वाली अमरुद <mark style="color: red;">एंटीऑक्सीडेंट</mark> होती है और हरी वाली अमरुद में
+                        सबसे ज्यादा <mark style="color: red;">विटामिन सी (Vitamin C)</mark>
+                        पाई
+                        जाती है जो
+                        हमारे शरीर के लिए बहुत ही फायदेमंद है!</P>
+
+                    <P> # अमरुद में Vitamin C होती है और Vitamin C स्किन के लिए बहुत फायदेमंद होता है तो अमरूद खाना
+                        चाहिए क्युकी <mark style="color: red;">1 अमरुद खाने से जितना Vitamin C मिलेगा वो 4 दिन की
+                            Vitamin C की dose को पूरा कर
+                            देगा!</mark>
+                    </p>
+
+                    <p>
+                    <h3>#2 पेट के लिए फायदेमंद अमरूद!</h3>
+                    <img src="public/images/guava/GV3.jpg" alt="not available" class="GUAVA" width="800" height="500"><br>
+                    <p> अमरुद अकसर ठण्डी में मिलती है इसलिए ये पेट की बहुत सी बिमारिओ को दूर करने में मदद करती है इसके
+                        बीज
+                        के सेवन से भी बहुत फायदा मिलता है!</p>
+
+                    <p># अमरुद खाने से कब्ज की प्रॉब्लम खत्म हो जाती है!सुबह सुबह अमरुद खाइये!</p>
+
+                    <p># इस दौड़ भरी ज़िंदगी में हम कुछ गलत गलत चीजें खा लेते है जिसके कारण आप में और बच्चों के पेट में
+                        <mark style="color: red;">कीड़े</mark> हो जाते है जब भी ऐसा हो अमरूद खाना चाहिए बहुत फायदा होता
+                        है!
+                    </p>
+
+                    <P># अमरुद खाने से <mark style="color: red;">पाचन शक्ति </mark>मजबूत होती है आप अमरुद <mark
+                            style="color: red;">काले नमक</mark> के साथ खा सकते है!</P>
+
+                    </p>
+
+                    <br>
+                    <b>
+                        <p style="color: crimson;">➡️ अंकुरित चना खाने के जबरदस्त फायदे!... इसके लिए आप मेरा ये पोस्ट पढ़
+                            सकते
+                            है
+                            👇</p>
+                    </b>
+
+                    <div style="text-align: center; background-color:aquamarine;"><a href="chana"> 👉 अंकुरित चना
+                            खाने के जबरदस्त फायदे!...</a></div><br><br>
+
+                    <p>
+                    <h3>#3 अन्य फायदे!</h3>
+                    <img src="public/images/guava/GV1.jpg" alt="not available" class="GUAVA" width="800" height="500"><br>
+
+                    <p># अगर आपके मुंह में <mark style="color: red;">छाला </mark>हो गया है तो अमरुद के पत्ते को चबाना
+                        आपके लिए फायदेमंद साबित हो सकता है!
+                    </p>
+                    <p># आपके मुंह से <mark style="color: red;">बदबू</mark> आ रही है तो अमरूद की पत्ती को धीरे धीरे
+                        चबाइए इससे आपके मुंह की दुर्गन्ध चली
+                        जाएगी!</p>
+                    <p># अगर आपके <mark style="color: red;">दांतों में दर्द </mark>है और आप बहुत छटपटा रहे है तो अमरुद
+                        की पत्तियों को चबाएं या अमरुद की
+                        <mark style="color: red;">पतियो को गरम पानी में उबाल कर कुल्ला करे</mark> दांतों की दर्द में
+                        राहत मिलेगी!
+                    </p>
+                    <p># अगर आपको बार बार<mark style="color: red;"> उल्टी </mark>आ रही है तो आप अमरूद की पत्तियों का
+                        <mark style="color: red;">काढ़ा (10-12 ml)</mark>बनाकर पियें ये उल्टी
+                        रोकने में कारगर होगा!
+                    </p>
+                    <br>
+                    <b>
+                        <p style="color: tomato;"><mark>Note:-</mark>कोई भी सलाह / उपाय करने से पहले आप अपने डॉक्टर्स से
+                            संपर्क करे!.
+                            TechKnowTouchwood इस जानकारी के लिए कोई जिम्मेवारी नहीं लेता है!
+                            धन्यवाद्!</p>
+                    </b>
+                    </p>
+
+                    <br>
+                    <b>
+                        <p style="color: crimson;">➡️ How to Keep Fit Yourself(अपने आपको फिट कैसे रखे!...) इसके लिए आप
+                            मेरा
+                            ये पोस्ट पढ़
+                            सकते
+                            है
+                            👇</p>
+                    </b>
+
+                    <div style="text-align: center; background-color:aquamarine;"><a href="selffit.html"> 👉 How to Keep Fit
+                            Yourself(अपने आपको फिट कैसे रखे!...)</a></div><br><br>
+
+                    <p>
+
+                        <b>
+                            <p style="color: magenta;">Amazing Benefits of eating Guava!(अमरूद खाने के अदभुत फायदे!...)
+                                अगर आपको
+                                post अच्छा लगा तो कृपया like ,comment,
+                                Share और मेरे Youtube Channel [TechknowTouchwood] को Subscribe करना न भूले!</p>
+                        </b><br>
+
+                        <!-- facebook like and share  -->
+                    <div class="fb-comments" data-href="https://www.facebook.com/profile.php?id=100071503867557"
+                        data-width="100" data-numposts="5"></div>
+
+                    <div class="fb-like" data-href="https://www.techKnowtouchwood.com" data-width=""
+                        data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+
+                    <div class="g-ytsubscribe" data-channelid="UCXnKdPJtgsNsc022EMXgMgQ" data-layout="full"
+                        data-count="default">
+                    </div>
+
+                    <!-- end like and shar  -->
+                </div>
+            </div>
+
+
+            <!-- popular post links Start here   -->
+            <div class="rightcolumn">
+                <div class="card">
+                    <h3 style="color: crimson;"><u>My Popular Post.(इसे भी जरुर पढ़े!)</u></h3>
+
+                    <div style="background: aquamarine;"><a href="virat.html"> 👉 Bio-graphy of virat Kohli("विराट कोहली
+                            की जीवनी"...!)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="mongodb.html"> 👉 MongoDB Installation on Windows10 in
+                            Hindi
+                            (MongoDB
+                            इंस्टालेशन हिंदी में)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="fbplugins.html"> 👉 Facebook Social Plugins का उपयोग करके
+                            अपनी
+                            वेबसाइट या ब्लॉग पर Like और Share
+                            बटन कैसे जोड़ें? हिंदी में</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="youtube.html"> 👉 (Configure a Youtube Button)अपनी वेबसाइट
+                            या
+                            ब्लॉग पर Youtube
+                            Subscribe Button कैसे जोड़ें? हिंदी में</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="channelfind.html"> 👉 How to find User ID & Channel ID on
+                            Youtube(Youtube पर User ID और
+                            Channel ID कैसे find
+                            करे) हिंदी में</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="tubebuddy.html"> 👉 Grow your youtube channel by the help
+                            of
+                            TUBEBUDDY(अपने यूट्यूब चैनल
+                            पर TUBEBUDDY कैसे use करे
+                            हिंदी
+                            में)</a></div><br>
+
+
+                </div>
+
+                <!-- popular post links end here  -->
+
+                <!-- important links start here  -->
+
+                <div class="card">
+                    <h3 style="color: crimson;"><u>Important Links.(इन पोस्ट को भी आप जरुर पढ़े!)</u></h3>
+
+
+                    <div style="background: aquamarine;"><a href="aadhar.html"> 👉 How to Order Your Aadhar PVC Card(अपना
+                            Aadhar PVC Card कैसे आर्डर
+                            करे...)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="selffit.html"> 👉 How to Keep Fit
+                            Yourself(अपने आपको फिट कैसे रखे!...)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="Aloevera.html"> 👉 Amazing Benefits of AloeVera(एलोवेरा के
+                            कमाल के फायदे!...)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="chana.html"> 👉 अंकुरित चना खाने के जबरदस्त
+                            फायदे...!)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="water.html"> 👉 The right way to drink water, advantages
+                            and disadvantages(पानी पीने
+                            का सही तरीका ,फायदा और
+                            नुकसान...!)</a></div><br>
+
+                </div>
+            </div>
+            <!-- important links end here  -->
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-3">
+                    <h2 class="footer-title secondary-title">About-Us</h2>
+
+                    <div class="secondary-title text-secondary">
+                        <p class="mt-2 ">
+                            Hey, I am Shashi a professional engineer , Youtuber and Blogger. I just Share
+                            some of most Interesting Posts related to Computer Technology and programming
+                            , Sarkari Yojna , Health/Fitness and Biography.Make sure You Hit the Like Button ,
+                            Share Button and
+                            Subscribe Button to Get My Latest Post.<br>
+                            Thank you.
+
+                        </p>
+
+                        <address>
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            New Ashok Nagar Block-A New Delhi 110096 India
+                        </address>
+
+                        <div class="phone">
+                            <i class="fas fa-mobile text-primary"></i>
+                            7765955247 , 8168583827
+                        </div>
+
+                        <div class="email">
+                            <i class="fas fa-envelope text-primary"></i>
+                            TechKnowTouchwood@gmail.com
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h2 class="footer-title secondary-title">Feature Post</h2>
+
+                    <div class="feature-post">
+                        <div class="flex-item">
+                            <article class="article">
+                                <div class="d-flex">
+                                    <a href="virat.html">
+                                        <img src="public/images/virat/VK1.png" class="object-fit px-1" alt="not available">
+                                        <div class="px-1">
+                                            <a href="virat.html" class="text-title display-2 text-dark">
+                                                Bio-graphy of virat Kohli("विराट कोहली की जीवनी"...!)
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="flex-item">
+                            <article class="article">
+                                <div class="d-flex">
+                                    <a href="mongodb.html">
+                                        <img src="public/images/m.png" class="object-fit px-1" alt="not available">
+                                        <div class="px-1">
+                                            <a href="mongodb.html" class="text-title display-2 text-dark">
+                                                MongoDB Installation on Window10 in hindi (MongoDB इंस्टालेशन हिंदी
+                                                में)
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="flex-item">
+                            <article class="article">
+                                <div class="d-flex">
+                                    <a href="fbplugins.html">
+                                        <img src="public/images/f.png" class="object-fit px-1" alt="not available">
+                                        <div class="px-1">
+                                            <a href="fbplugins.html" class="text-title display-2 text-dark">
+                                                Facebook Social Plugins का उपयोग करके अपनी वेबसाइट या ब्लॉग पर Like
+                                                और
+                                                Share बटन कैसे जोड़ें?
+                                                हिंदी में
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="flex-item">
+                            <article class="article">
+                                <div class="d-flex">
+                                    <a href="youtube.html">
+                                        <img src="public/images/y.png" class="object-fit px-1" alt="not available">
+                                        <div class="px-1">
+                                            <a href="youtube.html" class="text-title display-2 text-dark">
+                                                (Configure a Youtube Button)अपनी वेबसाइट या ब्लॉग पर Youtube
+                                                Subscribe
+                                                Button कैसे जोड़ें? हिंदी
+                                                में
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h2 class="footer-title secondary-title">Tags</h2>
+
+                    <div class="tags">
+                        <div class="d-flex flex-wrap">
+                            <a href="computertechnology.html" class="nav-link btn bg-light">Computer-Techonogy &
+                                programming</a>
+                            <a href="health.html" class="nav-link btn bg-light">Health-Fitness/Exercises</a>
+                            <a href="biography.html" class="nav-link btn bg-light">Bio-Graphy Net Worth</a>
+                            <a href="sarkariyojna.html" class="nav-link btn bg-light">Sarkari-Yojna</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- copyrights  -->
+        <div class="copyrights">
+            <p class="text-center text-secondary display-2">
+                Copyright ©2021-22 <a href="#" class="text-primary">TechKnowTouchwood</a> || All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- .footer -->
+
+
+    <!-- masonry libray for horizontal grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- swiper slider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
+        integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
+        crossorigin="anonymous"></script>
+
+    <!-- custom javascript main.js file -->
+    <script src="public/javascripts/script.js"></script>
+
+    <!-- youtube subscribe  -->
+    <script src="https://apis.google.com/js/platform.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechKnowTouchwood</title>
+
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- swiper slider css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"
+        integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    /* header  */
+    .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: mediumvioletred;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+
+    .WATER {
+        max-width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .mas:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- like and share plugin  -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v11.0"
+        nonce="Ci5SaryI"></script>
+
+    <!-- end like and share plugin  -->
+
+    <!-- Header -->
+    <header id="header" class="shadow bg-light">
+        <nav class="container navbar">
+            <a href="#" class="nav-brand text-dark">
+                <span style="color: red;">Tech</span>Know<span style="color: blue;">Touch</span>wood
+            </a>
+
+            <!-- toggle button -->
+            <button class="toggle-button">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- collapse on toggle button click -->
+            <div class="collapse">
+                <ul class="navbar-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="myblogs.html" class="nav-link">My-Blogs</a>
+                    <a href="https://alltexttranslator.herokuapp.com/" class="nav-link">Text-Translator</a>
+                    <a href="https://www.youtube.com/channel/UCXnKdPJtgsNsc022EMXgMgQ"
+                        class="nav-link">Youtube-Channel</a>
+                    <a href="Privacy-Policy.html" class="nav-link">Privacy-Policy</a>
+                    <a href="contact.html" class="nav-link">Contact-Us</a>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header">
+            <marquee width="60%" direction="left" scrollamount="10" height="50px" style="color: darkblue;">
+                www.Techknowtouchwood.com
+            </marquee>
+        </div>
+
+    </header>
+    <!-- googlr translate part  -->
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: '' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- end google translate part  -->
+    <!-- main -->
+
+    <section class="blogpart" id="blog">
+        <div class="mas">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2 style="color: crimson;"><u> The right way to drink water, advantages and disadvantages(पानी पीने
+                            का सही तरीका ,फायदा और
+                            नुकसान...!)</u>
+                    </h2>
+                    <h3>नमस्कार कैसे है आप लोग उम्मीद करते हैं आप अच्छे होंगे,आज के ब्लॉग में हम जानेंगे <mark
+                            style="color: red;">(पानी पीने
+                            का सही तरीका ,फायदा और
+                            नुकसान!) </mark>के बारे में
+                        चलिये शुरू करते हैं!
+                        Oct
+                        15, 2021.</h3><br>
+
+
+                    <img src="public/images/water/WT1.png" alt="not available" class="WATER" width="800" height="500"><br>
+
+                    <b>
+                        <p style="color: blue;">आजकल सबके मन में एक ही बात होती है की <mark style="color: red;">पानी
+                                पीने से क्या होता होगा?</mark> ,
+                            <mark style="color: red;">पानी कैसे पीना चाहिए?</mark> , <mark style="color: red;">पानी खाने
+                                के बाद पिए या खाने से पहले पिए?</mark>
+                        </p>,चलिए मैं आपके सभी सवालों
+                        का जवाब देता हु!
+                        सबसे पहले बताना चाहूंगा आप पानी खूब पिए त्वचा की कई
+                        प्रॉब्लम्स के लिए यह रामबाण से कम नहीं है , बालों और त्वचा की खूबसूरती निखारने का सबसे अच्छा
+                        नेचुरल उपाय है पानी...!</p>
+                    </b><br>
+
+
+                    <p>
+                    <h3>#1 पानी पीने का सही तरीका! धयान से पढ़े!</h3>
+                    <img src="public/images/water/WT4.png" alt="not available" class="WATER" width="800" height="500"><br>
+
+                    <b>
+                        <p>शरीर के लिए पानी बहुत जरूरी है डॉक्टर्स भी हमेशा सलाह देते है खूब पानी पीजिए दिन भर में <mark
+                                style="color: red;">कम से
+                                कम 3 से 4 लीटर!</mark>
+                            क्युकी आपके शरीर को पानी की जरूरत बहुत होती है!
+                            वैसे पानी की जरूरत मौसम के अनुसार होना चाहिए और आप किस वातावरण में रहते है या आप कितना
+                            एक्सरसाइज करते है!हम आपसे यही कहेंगे की आप पानी खूब पिए!</p>
+
+                    </b><br>
+                    <p># पानी हमेशा <mark style="color: red;">बैठकर</mark> आराम से पीना चाहिए!
+                        पानी अगर आप गिलास से पीयेंगे आराम आराम से तो और अच्छा है!</p>
+
+
+                    <P> # आप एक ही बार में जल्दी जल्दी पानी न पिये पानी को हमेशा आराम से गट गट <mark
+                            style="color: red;">घूँट</mark> में पिए इससे आप अनेक
+                        परेशानियो से बच सकते है!</P>
+
+                    <P># हमेशा सादा पानी ही पीना चाहिए!
+                        बहुत से लोगो को देखा जाता है बोतल का ठंडा पानी पीते है वो आपके हेल्थ के लिए बिलकुल अच्छा नहीं है
+                        ,
+                        आप हमेशा ध्यान रखे की <mark style="color: red;">रूम टेम्परेचर पर पानी पिए!</mark>
+                        ये आपके लिए फायदेमंद होगा!
+                    </P>
+
+                    <P> # खाना खाने के तुरंत बाद कभी भी पानी न पिए ऐसा करने से आपका<mark style="color: red;">पाचन क्रिया
+                            पर असर पड़ेगा!</mark> आप खाना
+                        <mark style="color: red;">खाने से पहले थोड़ा पानी पी सकते है </mark>, आप खाना <mark
+                            style="color: red;">खाने के बाद थोड़ा टहलें फिर 20-30 मिनट बाद पानी पी
+                            सकते है!</mark>
+                    </P>
+
+                    <P> # आपके शरीर में जब भी पानी की जरूरत होती है आपको प्यास लगता है
+                        बहुत से लोग है बिना प्यास के भी पानी पीते रहते है आपको ऐसा नहीं करना है ,आपको <mark
+                            style="color: red;">जब भी प्यास लगे
+                            तभी पानी पिए </mark>आपके लिए फायदेमंद होगा!
+                    </p>
+
+                    <p>
+                    <h3>#2 पानी पीने के फायदे!</h3>
+                    <img src="public/images/water/WT3.png" alt="not available" class="WATER" width="800" height="500"><br>
+
+
+                    <p># पानी आपके <mark style="color: red;">त्वचा के लिए बहुत फायदेमंद है</mark> पानी पीने से आपके
+                        त्वचा पर ग्लो आता है!</p>
+
+                    <p>#
+                        आपके शरीर में जरूरी <mark style="color: red;">पोषक तत्वों को पहुंचाने का काम करता है!</mark>
+                        शरीर के <mark style="color: red;">ऊर्जा के स्तर को बढ़ाता है!</mark>
+                    </p>
+
+                    <P># त्वचा के लिए बहुत फायदेमंद है क्यूंकि यह <mark style="color: red;">त्वचा को भरपूर पोषण देता
+                            है!</mark></P>
+                    <p># पानी आपके थकान को दूर करने में भी मदद करता है , <mark style="color: red;">आप वर्कआउट ज्यादा
+                            करते
+                            है</mark> तो आपको ज्यादा पानी पीना
+                        चाहिए आपके कैलोरी को कम करता है!</p>
+
+                    <p># आपके पाचन के लिए पानी बहुत जरूरी होता है!</p>
+
+                    </p>
+
+                    <br>
+                    <b>
+                        <p style="color: crimson;">➡️ अंकुरित चना खाने के जबरदस्त फायदे...! इसके लिए आप मेरा ये पोस्ट पढ़
+                            सकते
+                            है
+                            👇</p>
+                    </b>
+
+                    <div style="text-align: center; background-color:aquamarine;"><a href="chana.html"> 👉 अंकुरित चना
+                            खाने के जबरदस्त फायदे...!</a></div><br><br>
+
+                    <p>
+                    <h3>#3 गलत तरीके से पानी पीने के नुकसान!</h3>
+                    <img src="public/images/water/WT2.png" alt="not available" class="WATER" width="800" height="500"><br>
+                    <b>
+                        <p>अगर आप गलत तरीको से पानी पीते है तो ये आपके शरीर के लिए बहुत हानिकारक होता है,
+                            हम आपको यहाँ बता रहे है गलत तरीके से पानी पिने से क्या नुकसान होता है,</p>
+                    </b>
+
+                    <p># सबसे पहले हम आपको बताना चाहेंगे की आप <mark style="color: red;">खड़े होकर कभी भी पानी न
+                            पिए</mark> ऐसे पानी पीने से पानी आपके
+                        हडियो में जमा हो जायेंगे जिससे आपको परेशानी हो सकती है!</mark>
+                    </p>
+
+                    <p># गलत तरीके से पानी पीने से <mark style="color: red;">ऑक्सीजन सप्लाई भी रुक जाती है</mark></p>
+
+                    <p># आपके <mark style="color: red;">जोड़ो में दर्द भी हो सकती है</mark> गलत तरीके से पानी पीने से!
+                    </p>
+
+                    <p>#
+                        अगर आप हमेशा गलत तरीके से पानी पीते है तो आपको <mark style="color: red;">अपच</mark> की भी समस्या
+                        हो सकती है
+                    </p>
+
+                    <br>
+                    <b>
+                        <p style="color: tomato;"><mark>Note:-</mark>कोई भी सलाह / उपाय करने से पहले आप अपने डॉक्टर्स से
+                            संपर्क करे!.
+                            TechKnowTouchwood इस जानकारी के लिए कोई जिम्मेवारी नहीं लेता है!
+                            धन्यवाद्!</p>
+                    </b>
+                    </p>
+
+                    <br>
+                    <b>
+                        <p style="color: crimson;">➡️ Amazing Benefits of eating Guava!(अमरूद
+                            खाने के अदभुत फायदे...!)इसके लिए आप मेरा
+                            ये पोस्ट पढ़
+                            सकते
+                            है
+                            👇</p>
+                    </b>
+
+                    <div style="text-align: center; background-color:aquamarine;"><a href="guava.html"> 👉Amazing Benefits
+                            of eating Guava!(अमरूद
+                            खाने के अदभुत फायदे...!)</a></div><br><br>
+
+                    <p>
+
+                        <b>
+                            <p style="color: magenta;">(पानी पीने का सही तरीका ,फायदा और नुकसान...!) अगर
+                                आपको
+                                post अच्छा लगा तो कृपया like ,comment,
+                                Share और मेरे Youtube Channel [TechknowTouchwood] को Subscribe करना न भूले!</p>
+                        </b><br>
+
+                        <!-- facebook like and share  -->
+                    <div class="fb-comments" data-href="https://www.facebook.com/profile.php?id=100071503867557"
+                        data-width="100" data-numposts="5"></div>
+
+                    <div class="fb-like" data-href="https://www.techKnowtouchwood.com" data-width=""
+                        data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+
+                    <div class="g-ytsubscribe" data-channelid="UCXnKdPJtgsNsc022EMXgMgQ" data-layout="full"
+                        data-count="default">
+                    </div>
+
+                    <!-- end like and shar  -->
+                </div>
+            </div>
+
+
+            <!-- popular post links Start here   -->
+            <div class="rightcolumn">
+                <div class="card">
+                    <h3 style="color: crimson;"><u>My Popular Post.(इसे भी जरुर पढ़े!)</u></h3>
+                    <div style="background: aquamarine;"><a href="virat.html"> 👉 Bio-graphy of virat Kohli("विराट कोहली
+                            की जीवनी"...!)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="mongodb.html"> 👉 MongoDB Installation on Windows10 in
+                            Hindi
+                            (MongoDB
+                            इंस्टालेशन हिंदी में)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="fbplugins.html"> 👉 Facebook Social Plugins का उपयोग करके
+                            अपनी
+                            वेबसाइट या ब्लॉग पर Like और Share
+                            बटन कैसे जोड़ें? हिंदी में</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="youtube.html"> 👉 (Configure a Youtube Button)अपनी वेबसाइट
+                            या
+                            ब्लॉग पर Youtube
+                            Subscribe Button कैसे जोड़ें? हिंदी में</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="channelfind.html"> 👉 How to find User ID & Channel ID on
+                            Youtube(Youtube पर User ID और
+                            Channel ID कैसे find
+                            करे) हिंदी में</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="tubebuddy.html"> 👉 Grow your youtube channel by the help
+                            of
+                            TUBEBUDDY(अपने यूट्यूब चैनल
+                            पर TUBEBUDDY कैसे use करे
+                            हिंदी
+                            में)</a></div><br>
+
+
+                </div>
+
+                <!-- popular post links end here  -->
+
+                <!-- important links start here  -->
+
+                <div class="card">
+                    <h3 style="color: crimson;"><u>Important Links.(इन पोस्ट को भी आप जरुर पढ़े!)</u></h3>
+
+
+                    <div style="background: aquamarine;"><a href="aadhar.html"> 👉 How to Order Your Aadhar PVC Card(अपना
+                            Aadhar PVC Card कैसे आर्डर
+                            करे...)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="selffit.html"> 👉 How to Keep Fit
+                            Yourself(अपने आपको फिट कैसे रखे!...)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="guava.html"> 👉 Amazing Benefits of eating Guava!(अमरूद
+                            खाने के अदभुत फायदे!...)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="Aloevera.html"> 👉 Amazing Benefits of AloeVera(एलोवेरा के
+                            कमाल के फायदे!...)</a></div><br>
+
+                    <div style="background: aquamarine;"><a href="chana.html"> 👉 अंकुरित चना खाने के जबरदस्त
+                            फायदे!...)</a></div><br>
+
+
+                </div>
+            </div>
+            <!-- important links end here  -->
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-3">
+                    <h2 class="footer-title secondary-title">About-Us</h2>
+
+                    <div class="secondary-title text-secondary">
+                        <p class="mt-2 ">
+                            Hey, I am Shashi a professional engineer , Youtuber and Blogger. I just Share
+                            some of most Interesting Posts related to Computer Technology and programming
+                            , Sarkari Yojna , Health/Fitness and Biography.Make sure You Hit the Like Button ,
+                            Share Button and
+                            Subscribe Button to Get My Latest Post.<br>
+                            Thank you.
+
+                        </p>
+
+                        <address>
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            New Ashok Nagar Block-A New Delhi 110096 India
+                        </address>
+
+                        <div class="phone">
+                            <i class="fas fa-mobile text-primary"></i>
+                            7765955247 , 8168583827
+                        </div>
+
+                        <div class="email">
+                            <i class="fas fa-envelope text-primary"></i>
+                            TechKnowTouchwood@gmail.com
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h2 class="footer-title secondary-title">Feature Post</h2>
+
+                    <div class="feature-post">
+                        <div class="flex-item">
+                            <article class="article">
+                                <div class="d-flex">
+                                    <a href="virat.html">
+                                        <img src="public/images/virat/VK1.png" class="object-fit px-1" alt="not available">
+                                        <div class="px-1">
+                                            <a href="virat.html" class="text-title display-2 text-dark">
+                                                Bio-graphy of virat Kohli("विराट कोहली की जीवनी"...!)
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="flex-item">
+                            <article class="article">
+                                <div class="d-flex">
+                                    <a href="mongodb.html">
+                                        <img src="public/images/m.png" class="object-fit px-1" alt="not available">
+                                        <div class="px-1">
+                                            <a href="mongodb.html" class="text-title display-2 text-dark">
+                                                MongoDB Installation on Window10 in hindi (MongoDB इंस्टालेशन हिंदी
+                                                में)
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="flex-item">
+                            <article class="article">
+                                <div class="d-flex">
+                                    <a href="fbplugins.html">
+                                        <img src="public/images/f.png" class="object-fit px-1" alt="not available">
+                                        <div class="px-1">
+                                            <a href="fbplugins.html" class="text-title display-2 text-dark">
+                                                Facebook Social Plugins का उपयोग करके अपनी वेबसाइट या ब्लॉग पर Like
+                                                और
+                                                Share बटन कैसे जोड़ें?
+                                                हिंदी में
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="flex-item">
+                            <article class="article">
+                                <div class="d-flex">
+                                    <a href="youtube.html">
+                                        <img src="public/images/y.png" class="object-fit px-1" alt="not available">
+                                        <div class="px-1">
+                                            <a href="youtube.html" class="text-title display-2 text-dark">
+                                                (Configure a Youtube Button)अपनी वेबसाइट या ब्लॉग पर Youtube
+                                                Subscribe
+                                                Button कैसे जोड़ें? हिंदी
+                                                में
+                                            </a>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h2 class="footer-title secondary-title">Tags</h2>
+
+                    <div class="tags">
+                        <div class="d-flex flex-wrap">
+                            <a href="computertechnology.html" class="nav-link btn bg-light">Computer-Techonogy &
+                                programming</a>
+                            <a href="health.html" class="nav-link btn bg-light">Health-Fitness/Exercises</a>
+                            <a href="biography.html" class="nav-link btn bg-light">Bio-Graphy Net Worth</a>
+                            <a href="sarkariyojna.html" class="nav-link btn bg-light">Sarkari-Yojna</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- copyrights  -->
+        <div class="copyrights">
+            <p class="text-center text-secondary display-2">
+                Copyright ©2021-22 <a href="#" class="text-primary">TechKnowTouchwood</a> || All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- .footer -->
+
+
+    <!-- masonry libray for horizontal grid -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+        integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- swiper slider cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"
+        integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA=="
+        crossorigin="anonymous"></script>
+
+    <!-- custom javascript main.js file -->
+    <script src="public/javascripts/script.js"></script>
+
+    <!-- youtube subscribe  -->
+    <script src="https://apis.google.com/js/platform.js"></script>
+</body>
+
+</html>
