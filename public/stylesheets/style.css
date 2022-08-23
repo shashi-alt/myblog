@@ -404,7 +404,7 @@ address{
     }
 
     .collapse-toggle{
-        max-height: 500px;
+        max-height: 100px;
     }
 
     .grid .grid-item{
