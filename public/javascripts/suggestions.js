@@ -1,0 +1,18 @@
+let suggestions = [
+    "virat",
+    "aadharlinking",
+    "mongodb",
+    "fbplugins",
+    "youtube",
+    "channelfind",
+    "tubebuddy",
+    "selffit",
+    "guava",
+    "Aloevera",
+    "chana",
+    "water",
+    "papita",
+    "aadhar",
+    "contact",
+    "Privacy-Policy",
+];
